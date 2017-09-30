@@ -3,16 +3,43 @@
 <title>튀어오르는 공</title>
 <style>
 @-webkit-keyframes bounce {
-from, to {
-translate(100px, 0px);
+0% {
+  left: 0px; bottom: 0px;
 -webkit-animation-timing-function: ease-out;
 }
-50% {
-translate(100px, 0px);
-  bottom: 200px;
+12.5% {
+  left: 100px; bottom: 200px;
 -webkit-animation-timing-function: ease-in;
 }
+  25%{
+  left: 200px; bottom: 0px;
+-webkit-animation-timing-function: ease-out;
 }
+  37.5%{
+    left: 300px; bottom: 200px;
+-webkit-animation-timing-function: ease-in;
+}
+  50%{
+    left: 400px; bottom: 0px;
+-webkit-animation-timing-function: ease-out;
+}
+  67.5%{
+    left: 500px; bottom: 200px;
+-webkit-animation-timing-function: ease-in;
+}
+  75%{
+    left: 600px; bottom: 0px;
+-webkit-animation-timing-function: ease-out;
+}
+  87.5%{
+    left: 700px; bottom: 200px;
+-webkit-animation-timing-function: ease-in;
+}
+  100%{
+    left: 800px; bottom: 0px;
+-webkit-animation-timing-function: ease-out;
+}
+  
 #ball {
 position: absolute;
 width: 20px;
@@ -21,7 +48,7 @@ background: red;
 border-radius: 10px;
 -webkit-animation-name: bounce;
 -webkit-animation-iteration-count: infinite;
--webkit-animation-duration: 5s;
+-webkit-animation-duration: 14s;
 }
 </style>
 </head>
