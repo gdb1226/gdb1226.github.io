@@ -3,13 +3,27 @@
   <head>
     <style>
     div{
-      width: 100px;
-      height: 100px;
-      background: red;
       position: relative;
       animation: 2s myanim;
       animation-iteration-count: 10;
     }
+    #square{
+   	  width: 100px;
+  	  height: 100px;
+	    background: green;
+	    -moz-border-radius: 10px;
+	    -webkit-border-radius: 10px;
+  	  border-radius: 10px;
+     }
+    #circle {
+	    width: 100px;
+	    height: 100px;
+	    background: red;
+	    -moz-border-radius: 50px;
+	    -webkit-border-radius: 50px;
+	    border-radius: 10px;
+    }
+
     @keyframes myanim{
       0%  {left: 0px; top: 0px;}
       25% {left: 100px; top:0 px;}
