@@ -1,4 +1,10 @@
-<!--2016313837 장윤희-->
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -10,18 +16,25 @@
         height: 100%;
         background-color: rgb(234, 80, 140);
       }
-      #main{
+      @keyframes forhead{
+        0%{image1.src="0.jpg";}
+        50%{image1.src="50.jpg";}
+        100%{image1.src="100.jpg";}
+      }
+      #head{
         position: absolute;
         top: 0px;
         left: 0px;
-        width: 100%;
-        animation: formain;
+        width: 99%;
+        height: 600px;
+        background: url(0.jpg);
+        animation: 8s forhead;
         animation-iteration-count: infinite;
-      }
-      @keyframes formain{
-        0%{background-image:"0.jpg";}
-        50%{background-image:"50.jpg";}
-        100%{background-image:"100.jpg";}
+        no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
       }
       ul{
         position: absolute;
@@ -33,15 +46,46 @@
       }
       ul li{
         display: inline;
-        padding: 10px;
-        letter-spacing: 5px;
+        padding: 9px;
+        letter-spacing: 3px;
       }
-      ul li a{font: "PRIMETIME"; color: white;}
+      ul li a{text-decoration: none; font: "PRIMETIME"; color: white;}
       ul li a:hover{color: rgb(156, 156, 156);}
+      #vid{
+        width:65%;
+        height:900px;
+        float:left;
+      }
+      #log{
+        width:34%;
+        height:300px;
+        float:right;
+      }
+      #sch{
+        width:34%;
+        height:580px;
+        float:right;
+      }
+      caption{
+        caption-side: top;
+      }
+      table{
+        width: 100%;
+        text-align: center;
+        border: 1px solid black;
+      }
+      th{
+        background-color: black;
+        color: rgb(244, 166, 188);
+      }
+      td{
+        background-color: rgb(244, 166, 188);
+        color: black;
+      }
     </style>
   </head>
   <body>
-    <div id="main"></div>
+    <div id="head"><br><br>&nbsp;</div>
     <ul>
       <li><a href="#">HOME</a></li>
       <li><a href="#">LOGIN</a></li>
@@ -49,5 +93,49 @@
       <li><a href="#">GALLERY</a></li>
       <li><a href="#">CONTACT</a></li>
     </ul>
+    <div id="vid">
+      VIDEO<br>
+      <iframe width="640" height="360" src="https://www.youtube.com/embed/H43PMLIeT-c" frameborder="0" allowfullscreen></iframe>" controls height="850px" width=auto>
+    </div>
+    <div id="log">
+      <form>
+        ID:<input type="text" name="id"><br>
+        PW:<input type="password" name="pw"><br>
+        <button type="button" onclick="alert('로그인에 실패하였습니다!')">Log In</button>&nbsp;
+        <button type="button" onclick="alert('현재 이용 가능한 서비스가 아닙니다.')">Join</button>
+      </form>
+    </div>
+    <div id="sch">
+      <table>
+        <caption>2017.10</caption>
+        <tr>
+          <th>SUN</th>
+          <th>MON</th>
+          <th>TUE</th>
+          <th>WED</th>
+          <th>THR</th>
+          <th>FRI</th>
+          <th>SAT</th>
+        </tr>
+        <tr>
+          <th>1</th><th>2</th><th>3</th><th>4</th>
+          <th>5</th><th>6</th><th>7</th>
+        </tr>
+        <tr>
+          <th>8</th><th>9</th><th>10</th><th>11</th>
+          <th>12</th><th>13</th><th>14</th>
+        </tr>
+        <tr>
+          <th>15</th><th>16</th><th>17</th><th>18</th>
+          <th>19</th><th>20</th><th>21</th>
+        </tr>
+        <tr>
+          <th>22</th><th>23</th><th>24</th><th>25</th>
+          <th>26</th><th>27</th><th>28</th>
+        </tr>
+        <tr>
+          <th>29</th><th>30</th><th>31</th><th>&nbsp;</th>
+          <th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th>
+        </tr>
   </body>
 </html>
