@@ -11,8 +11,10 @@
         background-color: rgb(244, 166, 188);
       }
       @keyframes forhead{
-        0%{background-color=black;}
-        100%{background-color=white;}
+        from, to{
+          0%{background-color=black;}
+          100%{background-color=white;}
+        }
       }
       #head{
         width: 99%;
@@ -23,7 +25,8 @@
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-        animation: 8s forhead;
+        animation-name: forhead;
+        animation-duration: 4s;
         animation-iteration-count: infinite;
       }
       ul{
