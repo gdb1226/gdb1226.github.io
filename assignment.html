@@ -2,4 +2,52 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>::BLACKPINK JENNIE FANPAGE::</title>
     <style>
+      html, body{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(234, 80, 140);
+      }
+      #main{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        animation: formain;
+        animation-iteration-count: infinite;
+      }
+      @keyframes formain{
+        0%{background-image:"0.jpg";}
+        50%{background-image:"50.jpg";}
+        100%{background-image:"100.jpg";}
+      }
+      ul{
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        list-style: none;
+        text-align: center;
+        border-bottom: 3px solid white; padding: 8px;
+      }
+      ul li{
+        display: inline;
+        padding: 10px;
+        letter-spacing: 5px;
+      }
+      ul li a{font: "PRIMETIME"; color: white;}
+      ul li a:hover{color: rgb(156, 156, 156);}
+    </style>
+  </head>
+  <body>
+    <div id="main"></div>
+    <ul>
+      <li><a href="#">HOME</a></li>
+      <li><a href="#">LOGIN</a></li>
+      <li><a href="#">PROFILE</a></li>
+      <li><a href="#">GALLERY</a></li>
+      <li><a href="#">CONTACT</a></li>
+    </ul>
+  </body>
+</html>
