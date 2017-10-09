@@ -10,6 +10,10 @@
         height: 100%;
         background-color: rgb(234, 80, 140);
       }
+      @keyframes forhead{
+        0%{background-color=black;}
+        100%{background-color=white;}
+      }
       #head{
         width: 99%;
         height: 600px;
@@ -19,6 +23,8 @@
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
+        animation: 8s forhead;
+        animation-iteration-count: infinite;
       }
       ul{
         position: absolute;
