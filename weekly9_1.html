@@ -7,17 +7,17 @@
       for(var i=0; i<number; i++){
         myArray[i]=prompt("Input a word:", "");
       }
-      document.write("Size of array: " + number);
-      document.write("Sorting in ascending order...");
+      document.write("Size of array: " + number+ "<br><br>");
+      document.write("Sorting in ascending order..." + "<br><br>");
       myArray.sort();
-      document.write("Contents of array:");
+      document.write("Contents of array:"+"<br>");
       for(i=0; i<number; i++){
         document.write("word_array["+i+"]");
-        document.write(myArray[i]);
+        document.write(myArray[i]+"<br>");
       }
-      document.write("Reverse order...");
+      document.write("<br>"+"Reverse order..."+"<br><br>");
       myArray.reverse();
-      document.write("Contents of array:");
+      document.write("Contents of array:"+"<br>");
       for(i=0; i<number; i++){
         document.write("word_array["+i+"]");
         document.write(myArray[i]);
