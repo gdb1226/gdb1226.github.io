@@ -4,9 +4,9 @@
   <script>
     function addimg(){
       if(document.createElement){
-        var node=document.createElement('img');
-        img.src="logo.png";
-        document.getElementById("target").appendChild(node);
+        var img = new Image(100, 100);
+        img.src = "logo.png";
+        document.getElementById("target").appendChild(img);
       }
     }
   </script>
