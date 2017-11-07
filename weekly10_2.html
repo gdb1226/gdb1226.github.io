@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <script>
+    function addimg(){
+      if(document.createElement){
+        var node=document.createElement('img');
+        img src="logo.png";
+        document.getElementById("target").appendChild(node);
+      }
+    }
+  </script>
+  <div id="target" onclick="addimg()"></div>
+</body>
+<html>
